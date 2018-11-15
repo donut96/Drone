@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,5 +23,13 @@
         android:textSize="20sp"
         android:layout_centerInParent="true"
         android:layout_above="@id/txv_hello_word"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/special_sadikov"
+        android:layout_below="@id/txv_hello_word"
+        android:layout_centerInParent="true"
+        android:textSize="19sp"/>
 
 </RelativeLayout>
