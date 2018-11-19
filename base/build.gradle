@@ -24,4 +24,5 @@ dependencies {
     api 'com.android.support.constraint:constraint-layout:1.1.3'
     application project(':app')
     feature project(':feature')
+    implementation 'com.xgc1986.android:parallaxpagertransformer:1.0.4'
 }

@@ -9,27 +9,32 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:id="@+id/txv_hello_word"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerInParent="true"/>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/first_change"
-        android:textSize="20sp"
-        android:layout_centerInParent="true"
-        android:layout_above="@id/txv_hello_word"/>
+    <!--<TextView-->
+        <!--android:id="@+id/txv_hello_word"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--android:layout_centerInParent="true"/>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/special_sadikov"
-        android:layout_below="@id/txv_hello_word"
-        android:layout_centerInParent="true"
-        android:textSize="19sp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/first_change"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_above="@id/txv_hello_word"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/special_sadikov"-->
+        <!--android:layout_below="@id/txv_hello_word"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:textSize="19sp"/>-->
 
 </RelativeLayout>

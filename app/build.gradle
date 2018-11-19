@@ -27,4 +27,5 @@ android {
 dependencies {
     implementation project(':feature')
     implementation project(':base')
+    implementation 'com.xgc1986.android:parallaxpagertransformer:1.0.4'
 }

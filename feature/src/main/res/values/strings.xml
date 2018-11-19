@@ -1,10 +1,15 @@
 <resources>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Смирнов Дмитрий</string>
+    <string name="nav_header_subtitle">smirnovdmitry96@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="first_change">Первое изменение для GitHub!</string>
     <string name="special_sadikov">Специально для Артура Мунавировича!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drone_1">Дрон_1</string>
+    <string name="drone_2">Дрон_2</string>
 </resources>
