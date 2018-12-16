@@ -74,15 +74,15 @@ public class RouteFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v =inflater.inflate(R.layout.fragment_route, container, false);
 
-        btnMap = v.findViewById(R.id.btn_map);
-
-        btnMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), MapActivity.class);
-                startActivity(intent);
-            }
-        });
+//        btnMap = v.findViewById(R.id.btn_map);
+//
+//        btnMap.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getContext(), MapActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         btnRoute1 = v.findViewById(R.id.btn_route1);
         btnRoute1.setOnClickListener(new View.OnClickListener() {

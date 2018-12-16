@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
-        setTitle("Главный");
+        setTitle("Личный кабинет");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

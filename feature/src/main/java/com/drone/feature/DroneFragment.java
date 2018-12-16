@@ -9,8 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.xgc1986.parallaxPagerTransformer.ParallaxPagerTransformer;
+import android.widget.TextView;
 
 
 /**
@@ -35,6 +34,7 @@ public class DroneFragment extends Fragment {
     FragmentStatePagerAdapter mAdapter;
 
     private OnFragmentInteractionListener mListener;
+    private TextView txvLinkSpark;
 
     public DroneFragment() {
         // Required empty public constructor
