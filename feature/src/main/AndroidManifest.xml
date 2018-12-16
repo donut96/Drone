@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.drone.feature">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application>
         <activity
             android:name=".MainActivity"
@@ -13,6 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FlyActivity" />
+        <activity android:name=".MapActivity"></activity>
     </application>
 
 </manifest>

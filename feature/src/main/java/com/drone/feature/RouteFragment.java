@@ -1,12 +1,16 @@
 package com.drone.feature;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -28,6 +32,11 @@ public class RouteFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    private Button btnRoute1;
+    private Button btnRoute2;
+    private Button btnRoute3;
+    private Button btnMap;
 
     public RouteFragment() {
         // Required empty public constructor
@@ -63,7 +72,112 @@ public class RouteFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_route, container, false);
+        View v =inflater.inflate(R.layout.fragment_route, container, false);
+
+        btnMap = v.findViewById(R.id.btn_map);
+
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRoute1 = v.findViewById(R.id.btn_route1);
+        btnRoute1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                routOne();
+            }
+        });
+
+        btnRoute2 = v.findViewById(R.id.btn_route2);
+        btnRoute2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                routTwo();
+            }
+        });
+
+        btnRoute3 = v.findViewById(R.id.btn_route3);
+        btnRoute3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                routThree();
+            }
+        });
+
+        return v;
+    }
+
+    public void routOne() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Внимание!")
+                .setMessage("Сейчас начнётся Ваш полёт!")
+                .setCancelable(false)
+                .setPositiveButton("Да, я согласен",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(getContext(), FlyActivity.class);
+                                intent.putExtra("Rout", 1);
+                                startActivity(intent);
+                            }
+                        })
+                .setNegativeButton("Отмена",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    public void routTwo() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Внимание!")
+                .setMessage("Сейчас начнётся Ваш полёт!")
+                .setCancelable(false)
+                .setPositiveButton("Да, я согласен",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(getContext(), FlyActivity.class);
+                                intent.putExtra("Rout", 2);
+                                startActivity(intent);
+                            }
+                        })
+                .setNegativeButton("Отмена",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    public void routThree() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Внимание!")
+                .setMessage("Сейчас начнётся Ваш полёт!")
+                .setCancelable(false)
+                .setPositiveButton("Да, я согласен",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(getContext(), FlyActivity.class);
+                                intent.putExtra("Rout", 3);
+                                startActivity(intent);
+                            }
+                        })
+                .setNegativeButton("Отмена",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     // TODO: Rename method, update argument and hook method into UI event
